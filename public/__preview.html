@@ -1,0 +1,40 @@
+<head>
+  <style>
+    html, body, #container {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="./preflight.css" />
+  <script data-theme type="application/json">
+    { "theme": "finn-no" }
+  </script>
+  <link data-theme rel="stylesheet" href="/finn-no.css" />
+</head>
+<body>
+  <div id="container"></div>
+  <style id="style"></style>
+</body>
+<script type="module">
+const container = document.getElementById('container')
+const style = document.getElementById('style')
+const root = document.body.parentElement
+
+window.addEventListener('message', ({ data }) => {
+  const payload = JSON.parse(data)
+  if (payload.source !== 'warp') return
+  container.innerHTML = payload.html
+  style.innerHTML = payload.css
+})
+
+window.parent.postMessage('warp-preview-setup')
+</script>
+<script type="module">
+import { WarpThemeHelper } from './theme-helper.js'
+
+const themeHelper = new WarpThemeHelper()
+themeHelper.setupThemeSwap()
+window.warp = themeHelper
+</script>
