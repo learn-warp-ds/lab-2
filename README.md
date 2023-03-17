@@ -15,7 +15,7 @@ Tasks:
 1. Add a wrapping element to the paragraph, and modify the paragraph to something more interesting than 'Hi'
 2. Give the wrapping element a background color using `bg` or `bg-subtle`, also specify a color for the text using `text` or `text-subtle`.
     - You can inspect the text using the browser inspector to see what the semantic tokens actually map to.
-3. Open the browser console and run `warp.setTheme('blocket-se')`
+3. Open the browser console (the console will need to be set to `__preview.html` and not `top`, [like this](/.github/console.png)) and run `warp.setTheme('blocket-se')`
     - You should see the semantic tokens stay the same (e.g. the `bg` class still uses `var(--w-background-color)`), but what those tokens **map to** changes
     - You can go back to the original theme by doing `warp.setTheme('finn-no')`, and you can query which theme is active by doing `warp.theme`
 
