@@ -21,12 +21,11 @@ Tasks:
 
 ## Part 2
 
-Task: Implement the following design using accessbility best practices in one of Warp's golden-path frameworks.
+Task: Implement the following design (see it in use [here](/.github/assets/design-in-use.gif?raw=true)) using accessbility best practices in one of Warp's golden-path frameworks.
 - [React](https://codesandbox.io/p/sandbox/learn-warp--react-1hjouk)
 - [Vue](https://codesandbox.io/p/sandbox/learn-warp--vue-39fi3v)
 
-<!-- ![sketch](/.github/assets/design.png?raw=true) -->
-![sketch in-motion](/.github/assets/design-in-use.gif?raw=true)
+![sketch](/.github/assets/design.png?raw=true)
 
 Notes:
 - Since this is a choice between two items, it should be implemented using a radio toggle
