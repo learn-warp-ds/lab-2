@@ -11,7 +11,7 @@ Goals for this lab:
 
 Go to the Github Page for this lab, you should see a playground site that greets you with "Hi".
 
-Tasks:
+### Tasks:
 1. Add a wrapping element to the paragraph, and modify the paragraph to something more interesting than 'Hi'
 2. Give the wrapping element a background color using `bg` or `bg-subtle`, also specify a color for the text using `text` or `text-subtle`.
     - You can inspect the text using the browser inspector to see what the semantic tokens actually map to.
@@ -21,13 +21,16 @@ Tasks:
 
 ## Part 2
 
-Task: Implement the following design (see it in use [here](/.github/assets/design-in-use.gif?raw=true)) using accessbility best practices in one of Warp's golden-path frameworks.
+### Task:
+
+Implement the following design (see it in use [here](/.github/assets/design-in-use.gif?raw=true)) using accessbility best practices in one of Warp's golden-path frameworks.
+
 - [React](https://codesandbox.io/p/sandbox/learn-warp--react-1hjouk)
 - [Vue](https://codesandbox.io/p/sandbox/learn-warp--vue-39fi3v)
 
 ![sketch](/.github/assets/design.png?raw=true)
 
-Notes:
+### Notes:
 - Since this is a choice between two items, it should be implemented using a radio toggle
 - The boxes should be clickable anywhere to modify the radio value
 - A screenreader should properly interpret this as two items labelled: 'Go to the gym' and 'Go for a hike'
